@@ -10,14 +10,19 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    background-image: url('../images/waves.gif');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+    background-image: url('../images/white-lace-pattern.png');
+    background-repeat: repeat;
+    background-size: 25%;
     width: 100%;
     align-items: center;
     align-content: center;
     justify-content: flex-start;
+    overflow: scroll;
+    min-height: 100vh;
+}
+
+p {
+    text-align: center;
 }
 
 .horizontal {
@@ -36,8 +41,8 @@ body {
     align-self: flex-start;
 }
 
-.bar p, .bar ul {
-    color:rgb(255, 211, 255) !important;
+.bar-item p, .bar-item ul, p.bar-item {
+    color:rgb(255, 211, 255);
 }
 
 a, a:visited {
@@ -47,4 +52,28 @@ a:hover {
     color: #ffeb85;
     -webkit-transition:color .3s ease-out;
     transition:color .3s ease-out;
+}
+
+.deco-bar {
+    background-image: url("../images/bunnies.jpg");
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 4em;
+    background-position: center center;
+    background-size: contain;
+    margin-top: auto;
+}
+
+.splide__arrow {
+    background-color: rgb(87 119 122 / 0.9);
+}
+
+.splide__slide {
+    align-content: center;
+}
+
+#post-space {
+    background-image: url("../images/blueCloud.png");
+    background-repeat: repeat-x;
+    background-size: 33.5%;
 }
