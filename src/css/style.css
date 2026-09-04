@@ -10,7 +10,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    background-image: url('/src/images/waves.gif');
+    background-image: url('../images/waves.gif');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -33,9 +33,18 @@ body {
     margin: 5em;
     border-radius: 0.5em;
     padding: 2em;
-
+    align-self: flex-start;
 }
 
 .bar p, .bar ul {
     color:rgb(255, 211, 255) !important;
+}
+
+a, a:visited {
+    color: #517a51;
+}
+a:hover {
+    color: #ffeb85;
+    -webkit-transition:color .3s ease-out;
+    transition:color .3s ease-out;
 }
